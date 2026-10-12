@@ -1,0 +1,57 @@
+{
+  "split": "test",
+  "note": "Evaluated once, after the val-based training/early-stopping decisions were finalized. Not tuned against.",
+  "overall": {
+    "precision": 0.95,
+    "recall": 0.918,
+    "mAP50": 0.95,
+    "mAP50_95": 0.703,
+    "macro_f1": 0.934
+  },
+  "per_class": {
+    "Glioma": {
+      "precision": 0.882,
+      "recall": 0.836,
+      "AP50": 0.898,
+      "AP50_95": 0.619,
+      "f1": 0.858
+    },
+    "Meningioma": {
+      "precision": 0.969,
+      "recall": 0.91,
+      "AP50": 0.948,
+      "AP50_95": 0.752,
+      "f1": 0.939
+    },
+    "No Tumor": {
+      "precision": 0.994,
+      "recall": 0.976,
+      "AP50": 0.994,
+      "AP50_95": 0.793,
+      "f1": 0.985
+    },
+    "Pituitary": {
+      "precision": 0.954,
+      "recall": 0.952,
+      "AP50": 0.96,
+      "AP50_95": 0.648,
+      "f1": 0.953
+    }
+  },
+  "error_analysis": {
+    "ground_truth_boxes": 628,
+    "true_positives": 584,
+    "wrong_class": 2,
+    "false_negatives": 42,
+    "false_positives": 70,
+    "glioma_false_positives": {
+      "background": 18,
+      "poor_localization": 18,
+      "duplicate": 13
+    },
+    "false_negatives_by_cause": {
+      "no_prediction": 19,
+      "poor_localization": 23
+    }
+  }
+}

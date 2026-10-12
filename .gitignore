@@ -1,0 +1,7 @@
+__pycache__/
+.ipynb_checkpoints/
+runs/
+*.log
+kaggle.json
+.env
+.DS_Store

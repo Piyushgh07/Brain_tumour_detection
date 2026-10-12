@@ -1,0 +1,10 @@
+ultralytics==8.4.175
+kagglehub
+opencv-python-headless
+pillow
+matplotlib
+pandas
+seaborn
+imagehash
+scikit-learn
+pyyaml
