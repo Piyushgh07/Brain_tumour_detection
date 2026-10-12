@@ -8,7 +8,7 @@ An educational brain MRI object detection project built around a data integrity 
 
 The main contribution is the dataset audit and evaluation setup, rather than a new detector architecture. The notebook found that many scans in the source validation set also appeared in training. It groups exact and visually similar images before splitting so duplicates stay on one side of the new train/validation/test split. It also checks folder labels against box class IDs, removes confirmed spurious boxes, and reports per-class scores and example errors.
 
-This is a practical, reproducible portfolio project, not a claim of a novel medical imaging method. The source has no patient identifiers, so duplicate grouping cannot guarantee patient-level separation.
+
 
 ## Results
 
